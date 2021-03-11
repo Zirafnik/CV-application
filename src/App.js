@@ -3,6 +3,7 @@ import uniqid from 'uniqid';
 import General from './components/General';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import './styles/reset.css'
 import './styles/App.css';
 
@@ -61,18 +62,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="h1">CV Application with React</h1>
+        <div className="content">
+          <h1 className="h1">CV Application with React</h1>
 
-        <General />
+          <General />
 
-        <h2>Education</h2>
-        {this.showEducation()}
-        <button className="add-btn" onClick={this.addEducation}>Add</button>
+          <h2>Education</h2>
+          {this.showEducation()}
+          <button className="add-btn" onClick={this.addEducation}>Add</button>
 
-        <h2>Experience</h2>
-        {this.showExperience()}
-        <button className="add-btn" onClick={this.addExperience}>Add</button>
-        
+          <h2>Experience</h2>
+          {this.showExperience()}
+          <button className="add-btn" onClick={this.addExperience}>Add</button>
+        </div>
+
+        <Footer />
       </div>
     );
   }

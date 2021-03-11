@@ -3,10 +3,19 @@ body, html {
 }
 
 .App {
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
 
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 0 auto;
 }
 
 .container {
@@ -16,7 +25,7 @@ body, html {
     flex-direction: column;
     align-items: center;
 
-    background-color: orange;
+    /* background-color: orange; */
 
     width: 50%;
 
@@ -56,4 +65,23 @@ button {
     height: 40px;
     width: 70px;
     margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.footer-text {
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.github-image {
+    height: 35px;
+    width: 35px;
 }
