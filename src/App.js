@@ -46,10 +46,8 @@ class App extends Component {
 
         <General />
 
-        <div>
-          {this.showEducation()}
-          <button onClick={this.addEducation}>Add</button>
-        </div>
+        {this.showEducation()}
+        <button className="add-btn" onClick={this.addEducation}>Add</button>
         
       </div>
     );

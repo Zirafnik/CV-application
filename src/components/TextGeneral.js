@@ -1,4 +1,4 @@
-function Text(props) {
+function TextGeneral(props) {
     const {firstName, lastName, email, phone} = props.state;
 
     return (
@@ -11,4 +11,4 @@ function Text(props) {
     );
 }
 
-export default Text;
+export default TextGeneral;

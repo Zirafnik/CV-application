@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Text from './Text';
+import TextGeneral from './TextGeneral';
 import styles from '../styles/General.module.css';
 
 class General extends Component {
@@ -69,7 +69,7 @@ class General extends Component {
             return (
                 <div className="container">
                     <h2>General Information</h2>
-                    <Text state={this.state} />
+                    <TextGeneral state={this.state} />
                     <button onClick={this.handleSave}>Edit</button>
                 </div>
             );

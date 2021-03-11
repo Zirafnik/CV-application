@@ -23,6 +23,10 @@ body, html {
     margin-top: 20px;
 }
 
+.add-btn {
+    align-self: center;
+}
+
 h1 {
     font-size: 50px;
     align-self: center;
