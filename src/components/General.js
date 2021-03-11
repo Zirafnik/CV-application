@@ -7,7 +7,6 @@ class General extends Component {
         super(props);
 
         this.state= {
-            saveName: 'Save',
             saved: false,
 
             firstName: '',
@@ -37,7 +36,6 @@ class General extends Component {
         }
 
         this.setState({
-            saveName: text,
             saved: !this.state.saved,
         });
     }
@@ -45,7 +43,7 @@ class General extends Component {
     render() {
         if(this.state.saved===false) {
             return (
-                <form className={styles.container}>
+                <form className="container">
                     <h2 className={styles.h1}>General Information</h2>
                     <div className={styles.wrapper}>
                         <label>First Name:
@@ -64,15 +62,15 @@ class General extends Component {
                         </label>
                     </div>
 
-                    <button onClick={this.handleSave}>{this.state.saveName}</button>
+                    <button onClick={this.handleSave}>Save</button>
                 </form>
             );
         } else {
             return (
-                <div className={styles.container}>
+                <div className="container">
                     <h2>General Information</h2>
                     <Text state={this.state} />
-                    <button onClick={this.handleSave}>{this.state.saveName}</button>
+                    <button onClick={this.handleSave}>Edit</button>
                 </div>
             );
         }

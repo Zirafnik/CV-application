@@ -1,13 +1,50 @@
+body, html {
+    height: 100%;
+}
+
 .App {
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
-
     background-color: aqua;
 }
 
-.h1 {
+.container {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: orange;
+
+    width: 50%;
+
+    margin-top: 20px;
+}
+
+h1 {
     font-size: 50px;
     align-self: center;
+}
+
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 200px;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    margin-bottom: 20px;
 }
