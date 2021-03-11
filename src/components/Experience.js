@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
-import styles from '../styles/Education.module.css';
-import TextEducation from './TextEducation';
+import TextExperience from './TextExperience';
 
-class Education extends Component {
+class Experience extends Component {
     constructor(props) {
         super(props);
 
-        this.name= 'education';
+        this.name= 'experience';
 
         this.state= {
             saved: false,
 
-            institution: '',
-            qualification: '',
+            company: '',
+            position: '',
             from: '',
             to: '',
+            description: '',
         }
 
         this.handleChange= this.handleChange.bind(this);
@@ -39,11 +39,11 @@ class Education extends Component {
         if(this.state.saved===false) {
             return (
                 <div className="container">
-                    <label>Institution:
-                        <input name='institution' onChange={this.handleChange} value={this.state.institution} type="text" placeholder="Institution"></input>
+                    <label>Company:
+                        <input name='company' onChange={this.handleChange} value={this.state.company} type="text" placeholder="Company"></input>
                     </label>
-                    <label>Qualification:
-                        <input name='qualification' onChange={this.handleChange} value={this.state.qualification} type="text" placeholder="Qualification"></input>
+                    <label>Position:
+                        <input name='position' onChange={this.handleChange} value={this.state.position} type="text" placeholder="Position"></input>
                     </label>
                     <label>From:
                         <input name='from' onChange={this.handleChange} value={this.state.from} type="date"></input>
@@ -51,6 +51,8 @@ class Education extends Component {
                     <label>To:
                         <input name='to' onChange={this.handleChange} value={this.state.to} type="date"></input>
                     </label>
+
+                    <textarea onChange={this.handleChange} value={this.state.description} name='description' rows="4" cols="50" placeholder='Description...'></textarea>
                     
                     <div>
                         <button onClick={this.handleSave}>Save</button>
@@ -61,7 +63,7 @@ class Education extends Component {
         } else {
             return(
                 <div className="container">
-                <TextEducation state={this.state} />
+                <TextExperience state={this.state} />
                 <button onClick={this.handleSave}>Edit</button>
             </div>
             )
@@ -69,4 +71,4 @@ class Education extends Component {
     }
 }
 
-export default Education;
+export default Experience;
