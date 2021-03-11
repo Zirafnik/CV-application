@@ -5,6 +5,8 @@ class Education extends Component {
     constructor(props) {
         super(props);
 
+        this.name= 'education';
+
         this.state= {
             saved: false,
 
@@ -42,7 +44,7 @@ class Education extends Component {
 
     render() {
         return (
-            <form className="container">
+            <div className="container">
                 <h2>Education</h2>
                 <label>Institution:
                     <input name='institution' onChange={this.handleChange} type="text" placeholder="Institution"></input>
@@ -59,11 +61,11 @@ class Education extends Component {
                 
                 <div>
                     <button onClick={this.handleSave}>Save</button>
-                    <button>Delete</button>
+                    <button onClick={() => this.props.delete(this.name, this.props.id)}>Delete</button>
                 </div>
 
                 <button>Add</button>
-            </form>
+            </div>
         );
     }
 }

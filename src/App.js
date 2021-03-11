@@ -16,6 +16,7 @@ class App extends Component {
 
     this.addEducation= this.addEducation.bind(this);
     this.showEducation= this.showEducation.bind(this);
+    this.deleteSection= this.deleteSection.bind(this);
   }
 
   addEducation() {
@@ -27,9 +28,15 @@ class App extends Component {
   showEducation() {
     return(
       this.state.educationID.map((id) =>
-        <Education key={id} />
+        <Education key={id} id={id} delete={this.deleteSection} />
       )
     );
+  }
+
+  deleteSection(name, id) {
+    this.setState({
+      [name + 'ID']: this.state[name + 'ID'].filter(savedID => savedID !== id),
+    })
   }
 
   render() {
