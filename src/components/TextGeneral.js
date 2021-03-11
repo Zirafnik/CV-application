@@ -2,11 +2,11 @@ function TextGeneral(props) {
     const {firstName, lastName, email, phone} = props.state;
 
     return (
-        <div>
-            <p>First Name: {firstName}</p>
-            <p>Last Name: {lastName}</p>
-            <p>Email: {email}</p>
-            <p>Phone Number: {phone}</p>
+        <div className='text'>
+            <p><span className='bold'>First Name: </span>{firstName}</p>
+            <p><span className='bold'>Last Name: </span>{lastName}</p>
+            <p><span className='bold'>Email: </span>{email}</p>
+            <p><span className='bold'>Phone Number: </span>{phone}</p>
         </div>
     );
 }

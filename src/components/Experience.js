@@ -52,7 +52,7 @@ class Experience extends Component {
                         <input name='to' onChange={this.handleChange} value={this.state.to} type="date"></input>
                     </label>
 
-                    <textarea onChange={this.handleChange} value={this.state.description} name='description' rows="4" cols="50" placeholder='Description...'></textarea>
+                    <textarea className='textarea' onChange={this.handleChange} value={this.state.description} name='description' rows="4" cols="50" placeholder='Description...'></textarea>
                     
                     <div>
                         <button onClick={this.handleSave}>Save</button>

@@ -2,11 +2,11 @@ function TextEducation(props) {
     const {institution, qualification, from, to} = props.state;
 
     return (
-        <div>
-            <p>Institution: {institution}</p>
-            <p>Qualification: {qualification}</p>
-            <p>From: {from}</p>
-            <p>To: {to}</p>
+        <div className='text'>
+            <p><span className='bold'>Institution: </span>{institution}</p>
+            <p><span className='bold'>Qualification: </span>{qualification}</p>
+            <p><span className='bold'>From: </span>{from}</p>
+            <p><span className='bold'>To: </span>{to}</p>
         </div>
     );
 }
