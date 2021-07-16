@@ -2,7 +2,7 @@
 
 A CV/resume builder app. You can use it to build your resume and print it out.
 
-It is built with **React** and I initially used *class components*, but later refactored them into *functional components*.
+It is built with **React** and I initially used ***class components***, but later refactored them into ***functional components***.
 
 You can add additional sections in the 'Education' and 'Experience parts by clicking 'Add' and you can edit any section that is already saved by clicking 'Edit'.
 
@@ -12,4 +12,4 @@ Live: https://zirafnik.github.io/CV-application/
 
 ![Screenshot 1](/screenshots/CV-builder-screenshot1.png)
 
-![Screenshot 2](/screenshot/CV-builder-screenshot2.png)
+![Screenshot 2](/screenshots/CV-builder-screenshot2.png)
